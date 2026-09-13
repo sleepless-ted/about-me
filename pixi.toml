@@ -1,0 +1,23 @@
+[workspace]
+name = "site-vitrine"
+version = "1.0.0"
+description = "Site vitrine Django de Ted Dousset"
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "linux-64"]
+
+[dependencies]
+python = ">=3.12,<3.13"
+
+[pypi-dependencies]
+django = ">=5.2.17,<5.3"
+whitenoise = ">=6.12,<7"
+gunicorn = ">=23,<24"
+
+[tasks]
+dev = { cmd = "python manage.py runserver 127.0.0.1:8000", env = { DJANGO_DEBUG = "1" } }
+check = { cmd = "python manage.py check", env = { DJANGO_DEBUG = "1" } }
+test = { cmd = "python manage.py test", env = { DJANGO_DEBUG = "1" } }
+build = { cmd = "python manage.py export_site", env = { DJANGO_DEBUG = "1" } }
+preview = "python -m http.server 8001 --bind 127.0.0.1 --directory dist"
+collectstatic = "python manage.py collectstatic --noinput"
+start = "gunicorn config.wsgi:application --bind 127.0.0.1:8000"

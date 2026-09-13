@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <section id="hero" class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-line" aria-hidden="true"></span> TED DOUSSET · FREELANCE · PARIS</p>
+        <h1 id="hero-title">De la donnée<br>
+à <span class="accent">l’IA utile.</span></h1>
+        <p class="hero-role">Lead AI Engineer <span>/</span> Data Scientist senior</p>
+        <p class="hero-description">Je transforme vos données, documents et processus métier en outils IA qui fonctionnent. Du premier prototype à la mise en production.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Parlons de votre projet <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#expertises">Découvrir mes expertises <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-footnote"><span aria-hidden="true">⌘</span> Python au cœur. Votre métier en tête.</div>
+      </div>
+
+      <div class="profile-wrap">
+        <div class="profile-topline"><span>HUMAIN DERRIÈRE LES MODÈLES</span><span aria-hidden="true">[ 01 ]</span></div>
+        <div class="profile-portrait">
+          <img src="{% static 'vitrine/assets/ted-dousset.png' %}" alt="Portrait de Ted Dousset" width="360" height="360" fetchpriority="high">
+          <div class="portrait-caption"><span>Ted Dousset</span><span>Paris, FR ↗</span></div>
+        </div>
+        <div class="profile-code" aria-label="Spécialités : Python, Machine Learning, LLM et RAG, de bout en bout">
+          <div class="code-title"><span aria-hidden="true">&gt;_</span> profile.py <span class="code-label">PYTHON</span></div>
+          <code><span class="code-muted">focus</span> = [<span class="code-string">"ML"</span>, <span class="code-string">"LLM"</span>, <span class="code-string">"RAG"</span>]<br>
+<span class="code-muted">delivery</span> = <span class="code-string">"end_to_end"</span><br>
+<span class="code-muted">mindset</span> = <span class="code-string">"build → measure → improve"</span></code>
+        </div>
+        <span class="profile-side" aria-hidden="true">DATA → MODELS → PRODUCTS</span>
+      </div>
+    </section>
+
+    <div class="proof-strip container" aria-label="Repères professionnels">
+      <div><span class="proof-number">5<span>+</span></span><span>années chez Ecojoko<br>
+<strong>IA en production</strong></span></div>
+      <div><span class="proof-number">3</span><span>data scientists<br>
+<strong>dans l’équipe pilotée</strong></span></div>
+      <div><span class="proof-number">A<span> → Z</span></span><span>du premier prototype<br>
+<strong>à l’industrialisation</strong></span></div>
+      <a href="https://www.malt.fr/profile/tedd" target="_blank" rel="noopener noreferrer" class="proof-malt"><span class="malt-mark">malt<span>✳</span></span><span>Retrouvez-moi sur Malt <span aria-hidden="true">↗</span></span></a>
+    </div>
+
+    <section id="expertises" class="section container" aria-labelledby="expertises-title">
+      <div class="section-top"><p class="eyebrow">01 / CE QUE JE PEUX FAIRE POUR VOUS</p><span class="section-side">DE L’IDÉE AU TERRAIN</span></div>
+      <div class="section-heading"><h2 id="expertises-title">Votre enjeu métier.<br>
+<span class="muted">La bonne solution IA.</span></h2><p>PME, startups ou équipes produit :<br>
+un accompagnement concret, adapté à vos données et à vos contraintes.</p></div>
+      <div class="service-grid">
+        <article class="service-card service-featured">
+          <div class="service-top"><span class="service-icon" aria-hidden="true">⌕</span><span class="duration">1 À 3 JOURS</span></div>
+          <h3>Audit IA & data</h3>
+          <p>Identifier les cas d’usage pertinents, évaluer vos données et savoir par où commencer.</p>
+          <div class="service-bottom"><span>Diagnostic & feuille de route</span><a href="#contact" aria-label="Discuter d’un audit IA et data">↗</a></div>
+        </article>
+        <article class="service-card">
+          <div class="service-top"><span class="service-icon" aria-hidden="true">[✳]</span><span class="duration">5 À 10 JOURS</span></div>
+          <h3>Assistants IA & documents</h3>
+          <p>Interroger vos documents, retrouver l’information et explorer des agents adaptés à vos processus.</p>
+          <div class="service-bottom"><span>Prototype LLM / RAG</span><a href="#contact" aria-label="Discuter d’un prototype LLM ou RAG">↗</a></div>
+        </article>
+        <article class="service-card">
+          <div class="service-top"><span class="service-icon" aria-hidden="true">↗</span><span class="duration">SUR MESURE</span></div>
+          <h3>Prédiction & analyse</h3>
+          <p>Prédire, classifier et exploiter vos séries temporelles avec des modèles mesurés sur vos données.</p>
+          <div class="service-bottom"><span>Modèles Machine Learning</span><a href="#contact" aria-label="Discuter d’un modèle Machine Learning">↗</a></div>
+        </article>
+        <article class="service-card">
+          <div class="service-top"><span class="service-icon" aria-hidden="true">&lt;/&gt;</span><span class="duration">SUR MESURE</span></div>
+          <h3>Python & automatisation</h3>
+          <p>Relier vos outils, fiabiliser vos flux de données et automatiser les tâches répétitives de vos équipes.</p>
+          <div class="service-bottom"><span>APIs & outils métier</span><a href="#contact" aria-label="Discuter d’une automatisation Python">↗</a></div>
+        </article>
+      </div>
+      <div class="production-banner"><span class="production-symbol" aria-hidden="true">✓</span><div><strong>Et après le prototype ? La production.</strong><p>Mise en production, tests, suivi des performances et documentation font aussi partie de mes missions.</p></div><span class="tag">MLOps</span></div>
+      <p class="section-note">Les durées d’audit et de prototypage sont indicatives ; le périmètre est défini ensemble.</p>
+    </section>
+
+    <section id="experience" class="experience-section" aria-labelledby="experience-title">
+      <div class="container section">
+        <div class="section-top"><p class="eyebrow">02 / L’EXPÉRIENCE DU RÉEL</p><span class="section-side">CONSTRUIRE. LIVRER. AMÉLIORER.</span></div>
+        <div class="section-heading"><h2 id="experience-title">L’IA, au-delà<br>
+<span class="muted">du prototype.</span></h2><p>Mon fil conducteur : relier la rigueur<br>
+de la data science aux exigences<br>
+d’un produit utilisé sur le terrain.</p></div>
+        <article class="experience-main">
+          <div class="experience-company"><div class="company-logo">ecojoko<span>.</span></div><p>JAN. 2021 — AUJOURD’HUI</p><span class="tag">ÉNERGIE · PRODUIT</span></div>
+          <div class="experience-content"><h3>Lead Data Scientist</h3><p class="experience-intro">Piloter le développement IA de bout en bout, de la collecte des données à la mise en production de la solution.</p><div class="experience-points"><div><span>01</span><div><h4>Comprendre la consommation</h4><p>Analyser la consommation électrique globale pour identifier les usages et les appareils qui la composent.</p></div></div><div><span>02</span><div><h4>Modéliser & prédire</h4><p>Conception de modèles de consommation, entraînement et exploitation des données.</p></div></div><div><span>03</span><div><h4>Construire & faire avancer l’équipe</h4><p>Roadmap IA, gestion des bases de données, lead de 3 data scientists et collaboration avec les équipes backend et serveurs.</p></div></div></div><div class="tags"><span>Python</span><span>Machine Learning</span><span>Séries temporelles</span><span>GitLab CI/CD</span></div></div>
+        </article>
+        <article class="experience-secondary"><div><span class="edf-logo">EDF <span>R&D</span></span><p>AVR. — OCT. 2021 · 6 MOIS</p></div><div><h3>Stagiaire Data Scientist</h3><p>Prédiction de la consommation des particuliers, classification des courbes de charge et communication des performances des algorithmes.</p></div><span class="experience-year" aria-hidden="true">2021</span></article>
+      </div>
+    </section>
+
+    <section id="approche" class="section container" aria-labelledby="approche-title">
+      <div class="section-top"><p class="eyebrow">03 / COMMENT ON TRAVAILLE ENSEMBLE</p></div>
+      <div class="section-heading"><h2 id="approche-title">Un cap clair.<br>
+<span class="muted">Des avancées concrètes.</span></h2><p>Un interlocuteur technique, du besoin<br>
+métier jusqu’à la prise en main<br>
+par votre équipe.</p></div>
+      <div class="process-grid"><article><span class="step-number">01<span> /</span></span><h3>Cadrer</h3><p>Comprendre votre besoin, examiner les données disponibles et définir des critères de réussite.</p></article><article><span class="step-number">02<span> /</span></span><h3>Construire & mesurer</h3><p>Développer une première solution, la tester sur vos cas réels et itérer à partir des résultats.</p></article><article><span class="step-number">03<span> /</span></span><h3>Livrer & transmettre</h3><p>Intégrer, documenter et préparer la suite : maintenance, suivi des performances et autonomie de vos équipes.</p></article></div>
+      <div class="stack-line"><span class="eyebrow">MES OUTILS, AU SERVICE DU BESOIN</span><div><span>Python</span><span>Django</span><span>Pandas</span><span>PyTorch</span><span>TensorFlow</span><span>SQL</span><span>GitLab CI/CD</span><span>Linux</span></div></div>
+    </section>
+
+    <section id="contact" class="contact-section container" aria-labelledby="contact-title">
+      <div class="contact-main"><p class="eyebrow">04 / ET SI ON EN PARLAIT ?</p><h2 id="contact-title">Vos données ont du potentiel.<br>
+<span>Faisons-en quelque chose.</span></h2><p>Un besoin précis ou une idée à explorer ?<br>
+Parlons de votre contexte et de ce qu’on peut construire ensemble.</p><a class="button button-dark" href="https://www.malt.fr/profile/tedd" target="_blank" rel="noopener noreferrer">Discuter de mon projet sur Malt <span aria-hidden="true">↗</span></a></div>
+      <div class="contact-details"><span class="contact-monogram" aria-hidden="true">t.</span><dl><div><dt>LOCALISATION</dt><dd>Paris, France · À distance</dd></div><div><dt>TARIF INDICATIF</dt><dd>550 € <span>/ jour</span></dd></div><div><dt>PROFIL</dt><dd>Lead AI Engineer<br>
+Data Scientist senior</dd></div></dl></div>
+    </section>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% load static %}
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101311">
+  <title>Ted Dousset — Lead AI Engineer · Python, ML & LLM</title>
+  <meta name="description" content="Lead AI Engineer et Data Scientist senior à Paris. Audit IA, prototypes LLM/RAG, modèles prédictifs et automatisation Python, de vos données à la production.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Ted Dousset — De la donnée à l’IA utile.">
+  <meta property="og:description" content="Python, Machine Learning en production, LLM & RAG. Un interlocuteur, du premier prototype à la mise en production.">
+  <link rel="icon" href="{% static 'vitrine/assets/favicon.svg' %}" type="image/svg+xml">
+  <link rel="stylesheet" href="{% static 'vitrine/styles.css' %}">
+  <script src="{% static 'vitrine/main.js' %}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#hero" aria-label="Ted Dousset, accueil">ted<span>.</span><span class="wordmark-role">AI ENGINEER</span></a>
+      <button class="menu-toggle" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">＋</span></button>
+      <nav id="navigation" aria-label="Navigation principale">
+        <a href="#expertises">Expertises</a>
+        <a href="#experience">Expérience</a>
+        <a href="#approche">Approche</a>
+        <a class="nav-contact" href="#contact">Parlons de votre projet <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+{% block content %}{% endblock %}
+  </main>
+  <footer class="container footer"><a class="wordmark" href="#hero" aria-label="Retour à l’accueil">ted<span>.</span></a><p>© <span id="year">{% now "Y" %}</span> Ted Dousset</p><div><a href="https://github.com/sleepless-ted" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.malt.fr/profile/tedd" target="_blank" rel="noopener noreferrer">Malt <span aria-hidden="true">↗</span></a><a href="#hero" aria-label="Retour en haut de page">↑</a></div></footer>
+</body>
+</html>

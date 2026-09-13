@@ -1,0 +1,11 @@
+.pixi/
+.venv/
+__pycache__/
+*.py[cod]
+staticfiles/
+dist/
+*.sqlite3
+.DS_Store
+.env
+.env.*
+!.env.example
