@@ -19,7 +19,7 @@ class Command(BaseCommand):
             raise CommandError("dist/ doit être un dossier local, pas un lien symbolique.")
 
         # Build completely before replacing the previous generated artifact.
-        with TemporaryDirectory(prefix="site-vitrine-export-") as temporary:
+        with TemporaryDirectory(prefix="about-me-export-") as temporary:
             staging = Path(temporary)
             with override_settings(
                 DEBUG=False,
@@ -34,7 +34,7 @@ class Command(BaseCommand):
                 call_command("collectstatic", interactive=False, verbosity=0)
                 html = render_to_string("pages/home.html")
 
-            # Relative URLs work at /site-vitrine/ and at a custom domain root.
+            # Relative URLs work at /about-me/ and at a custom domain root.
             html = html.replace('"/static/', '"./static/')
             (staging / "index.html").write_text(html, encoding="utf-8")
             (staging / ".nojekyll").touch()

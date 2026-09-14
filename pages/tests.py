@@ -66,7 +66,7 @@ class StaticExportTests(SimpleTestCase):
             parser = Resources()
             parser.feed(html)
             self.assertEqual(len(parser.urls), 4)
-            for base in ("https://example.com/", "https://example.com/site-vitrine/"):
+            for base in ("https://example.com/", "https://example.com/about-me/"):
                 for resource in parser.urls:
                     with self.subTest(base=base, resource=resource):
                         self.assertTrue(resource.startswith("./static/"))

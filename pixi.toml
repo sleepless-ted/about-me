@@ -1,5 +1,5 @@
 [workspace]
-name = "site-vitrine"
+name = "about-me"
 version = "1.0.0"
 description = "Site vitrine Django de Ted Dousset"
 channels = ["conda-forge"]
